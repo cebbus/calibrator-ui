@@ -27,7 +27,7 @@ Ext.define('Admin.view.main.MainController', {
             store = navigationList.getStore(),
             node = store.findNode('routeId', hashTag) ||
                    store.findNode('viewType', hashTag),
-            view = (node && node.get('viewType')) || 'page404',
+            view = (node && node.get('viewType')) || 'login',
             lastView = me.lastView,
             existingItem = mainCard.child('component[routeId=' + hashTag + ']'),
             newView;
@@ -146,6 +146,12 @@ Ext.define('Admin.view.main.MainController', {
     },
 
     onRouteChange:function(id){
+        if (id !== 'login') {
+            if (!Admin.security.TokenStorage.checkSessions()) {
+                id = 'login';
+            }
+        }
+
         this.setCurrentView(id);
     },
 
@@ -174,5 +180,16 @@ Ext.define('Admin.view.main.MainController', {
 
     onEmailRouteChange: function () {
         this.setCurrentView('email');
+    },
+
+    logout: function () {
+        const me = this;
+
+        Ext.Msg.confirm('Logout', 'Are you sure you want to logout?', function (btn) {
+            if (btn !== 'yes') return;
+
+            Admin.security.TokenStorage.clear();
+            me.setCurrentView('login');
+        });
     }
 });

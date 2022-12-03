@@ -14,6 +14,13 @@ Ext.define('Admin.Application', {
     //
     mainView: 'Admin.view.main.Main',
 
+    init() {
+        Ext.tip.QuickTipManager.init();
+        Ext.state.Manager.setProvider(Ext.create('Ext.state.LocalStorageProvider'));
+
+        Ext.ariaWarn = Ext.emptyFn;
+    },
+
     onAppUpdate: function () {
         Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
             function (choice) {
