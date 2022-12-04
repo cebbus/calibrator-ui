@@ -1,3 +1,17 @@
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-btn-facebook-large-tc {
+    background-position: 0 0;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-btn-facebook-large-bc {
+    background-position: 0 -1px;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-btn-facebook-large-tr,
+.x-btn-facebook-large-br,
+.x-btn-facebook-large-mr {
+    padding-right: 1px;
+}
 /* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
 .x-btn-facebook-large-tl,
 .x-btn-facebook-large-bl,
@@ -10991,62 +11005,68 @@
     color: #fff;
 }
 /* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:87 */
+.dashboard-member-grid .x-fa.fa-pencil-alt,
+.user-grid .x-fa.fa-pencil-alt {
+    background-color: #ffc000;
+    color: #fff;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:92 */
 .dashboard-member-grid .x-fa.x-action-col-icon,
 .user-grid .x-fa.x-action-col-icon {
     font-size: 13px !important;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:92 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:97 */
 .overflow-ellipsis {
     overflow: hidden;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:95 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:100 */
 .pie-legend-container {
     font-size: 11px;
     text-overflow: ellipsis;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:99 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:104 */
 .pie-legend-container .quick-graph-pie-legend {
     height: 15px;
     width: 15px;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:104 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:109 */
 .pie-legend-container .x-autocontainer-innerCt {
     padding-left: 10px;
     text-overflow: ellipsis;
     overflow: hidden;
     line-height: 14px;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:112 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:117 */
 .bottom-indent {
     margin-bottom: 16px;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:116 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:121 */
 .left-aligned-div {
     float: left;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:120 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:125 */
 .right-aligned-div {
     float: right;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:123 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:128 */
 .services-text {
     margin: 0 0 10px 5px;
     height: 86px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:130 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:135 */
 .services-legend {
     min-width: 240px;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:133 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:138 */
 .services-legend div {
     width: 15px;
     height: 15px;
     float: left;
     margin: 1px 5px 0 0;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:140 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:145 */
 .services-legend span {
     font-size: 11px;
     width: 33%;
@@ -11054,23 +11074,23 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:149 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:154 */
 .service-finance .x-progress-bar,
 .legend-finance {
     background-color: #ffc000;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:153 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:158 */
 .service-research .x-progress-bar,
 .legend-research,
 .widget-progressbar .x-progress-bar {
     background-color: #6aa5db;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:159 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:164 */
 .service-marketing .x-progress-bar,
 .legend-marketing {
     background-color: #ee929c;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:164 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:169 */
 .force-notext-button,
 .force-notext-button .x-frame-mc {
     background-color: #56b750;
@@ -11100,11 +11120,11 @@
 .force-notext-button .x-frame-mc:hover .x-btn-icon-el-default-toolbar-small {
     color: #56b750;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:169 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:174 */
 .white-panel {
     background: #fff;
 }
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:174 */
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/dashboard/Dashboard.scss:179 */
 .x-tool-wrench {
     font: 16px/1 'Font Awesome 5 Free';
     background: none;

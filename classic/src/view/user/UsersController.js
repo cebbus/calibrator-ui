@@ -21,6 +21,7 @@ Ext.define('Admin.view.user.UsersController', {
 
     openEditor: function (title, record) {
         const store = this.getStore('users');
+
         Ext.create({
             xtype: 'usereditor',
             title: title,

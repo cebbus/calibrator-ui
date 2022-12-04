@@ -84,6 +84,11 @@
         color: $lightest-color;
     }
 
+    &.fa-pencil-alt{
+        background-color: $grid-item-ban-btn-color;
+        color: $lightest-color;
+    }
+
     &.x-action-col-icon{
         font-size: 13px !important;
     }

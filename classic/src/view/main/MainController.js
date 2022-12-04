@@ -2,10 +2,10 @@ Ext.define('Admin.view.main.MainController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.main',
 
-    listen : {
-        controller : {
-            '#' : {
-                unmatchedroute : 'onRouteChange'
+    listen: {
+        controller: {
+            '#': {
+                unmatchedroute: 'onRouteChange'
             }
         }
     },
@@ -16,7 +16,7 @@ Ext.define('Admin.view.main.MainController', {
 
     lastView: null,
 
-    setCurrentView: function(hashTag) {
+    setCurrentView: function (hashTag) {
         hashTag = (hashTag || '').toLowerCase();
 
         var me = this,
@@ -26,11 +26,14 @@ Ext.define('Admin.view.main.MainController', {
             navigationList = refs.navigationTreeList,
             store = navigationList.getStore(),
             node = store.findNode('routeId', hashTag) ||
-                   store.findNode('viewType', hashTag),
+                store.findNode('viewType', hashTag),
             view = (node && node.get('viewType')) || 'login',
             lastView = me.lastView,
             existingItem = mainCard.child('component[routeId=' + hashTag + ']'),
             newView;
+
+        const vm = me.getViewModel();
+        vm.set('currentUser', Admin.security.TokenStorage.getUser());
 
         // Kill any previously routed window
         if (lastView && lastView.isWindow) {
@@ -56,8 +59,7 @@ Ext.define('Admin.view.main.MainController', {
                     mainLayout.setActiveItem(existingItem);
                 }
                 newView = existingItem;
-            }
-            else {
+            } else {
                 // newView is set (did not exist already), so add it and make it the
                 // activeItem.
                 Ext.suspendLayouts();
@@ -104,8 +106,7 @@ Ext.define('Admin.view.main.MainController', {
             // No animation for IE9 or lower...
             wrapContainer.layout.animatePolicy = wrapContainer.layout.animate = null;
             wrapContainer.updateLayout();  // ... since this will flush them
-        }
-        else {
+        } else {
             if (!collapsing) {
                 // If we are leaving micro mode (expanding), we do that first so that the
                 // text of the items in the navlist will be revealed by the animation.
@@ -139,13 +140,13 @@ Ext.define('Admin.view.main.MainController', {
         }
     },
 
-    onMainViewRender:function() {
+    onMainViewRender: function () {
         if (!window.location.hash) {
             this.redirectTo("dashboard");
         }
     },
 
-    onRouteChange:function(id){
+    onRouteChange: function (id) {
         if (id !== 'login') {
             if (!Admin.security.TokenStorage.checkSessions()) {
                 id = 'login';
@@ -161,7 +162,7 @@ Ext.define('Admin.view.main.MainController', {
 
     onSwitchToModern: function () {
         Ext.Msg.confirm('Switch to Modern', 'Are you sure you want to switch toolkits?',
-                        this.onSwitchToModernConfirmed, this);
+            this.onSwitchToModernConfirmed, this);
     },
 
     onSwitchToModernConfirmed: function (choice) {
@@ -191,5 +192,21 @@ Ext.define('Admin.view.main.MainController', {
             Admin.security.TokenStorage.clear();
             me.setCurrentView('login');
         });
+    },
+
+    onProfileNameRender: function () {
+        const classes = [
+            'profile-name-blue',
+            'profile-name-green',
+            'profile-name-orange',
+            'profile-name-red'
+        ];
+
+        const min = 0;
+        const max = classes.length - 1;
+        const clazz = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        const profileBox = this.getView().down('#profileName');
+        profileBox.addCls(classes[clazz]);
     }
 });

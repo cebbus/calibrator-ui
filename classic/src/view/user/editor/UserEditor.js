@@ -42,12 +42,14 @@ Ext.define('Admin.view.user.editor.UserEditor', {
             xtype: 'button',
             ui: 'soft-red',
             text: 'Cancel',
+            iconCls: 'x-fa fa-times',
             handler: 'onCancelClick'
         }, {
+            formBind: true,
             xtype: 'button',
             ui: 'soft-green',
             text: 'Save',
-            formBind: true,
+            iconCls: 'x-fa fa-check',
             handler: 'onSaveClick'
         }]
     }],

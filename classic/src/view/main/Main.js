@@ -51,17 +51,21 @@ Ext.define('Admin.view.main.Main', {
                 },
                 {
                     xtype: 'tbtext',
-                    //bind: {text: '{currentUser}'},
-                    text: Admin.security.TokenStorage.getUser(),
+                    bind: {text: '{currentUser}'},
                     cls: 'top-user-name'
                 },
                 {
-                    xtype: 'image',
-                    cls: 'header-right-profile-image',
+                    xtype: 'box',
+                    itemId: 'profileName',
+                    cls: 'header-right-profile-name',
                     height: 35,
                     width: 35,
-                    alt: 'current user image',
-                    src: 'resources/images/user-profile/2.png'
+                    bind: {
+                        html: '<span style="line-height: 35px;">{profileName}</span>'
+                    },
+                    listeners: {
+                        render: 'onProfileNameRender'
+                    }
                 }
             ]
         },

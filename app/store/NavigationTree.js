@@ -17,6 +17,11 @@ Ext.define('Admin.store.NavigationTree', {
             routeId: 'dashboard', // routeId defaults to viewType
             leaf: true
         }, {
+            text: 'Structure',
+            iconCls: 'x-fa fa-building',
+            viewType: 'structures',
+            leaf: true
+        }, {
             text: 'User',
             iconCls: 'x-fa fa-user',
             viewType: 'users',

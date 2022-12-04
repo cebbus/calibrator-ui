@@ -13106,6 +13106,37 @@ tr.x-grid-subtable-row {
 .x-html-editor-input {
     border: 1px solid #ccc;
 }
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/main/Main.scss:182 */
+.profile-name {
+    color: whitesmoke;
+    background-color: #925e8b;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/main/Main.scss:187 */
+.profile-name-blue {
+    color: whitesmoke;
+    background-color: #2eadf5;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/main/Main.scss:192 */
+.profile-name-green {
+    color: whitesmoke;
+    background-color: #9cc96b;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/main/Main.scss:197 */
+.profile-name-orange {
+    color: whitesmoke;
+    background-color: #ffc107;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/main/Main.scss:202 */
+.profile-name-red {
+    color: whitesmoke;
+    background-color: #e44959;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/classic/src/view/main/Main.scss:207 */
+.header-right-profile-name {
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 /* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
 .x-btn-soft-blue-small {
     -webkit-border-radius: 0;
@@ -15561,18 +15592,4 @@ tr.x-grid-subtable-row {
 /* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
 .x-btn-facebook-large-mr {
     background-position: right top;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
-.x-btn-facebook-large-tc {
-    background-position: 0 0;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
-.x-btn-facebook-large-bc {
-    background-position: 0 -1px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
-.x-btn-facebook-large-tr,
-.x-btn-facebook-large-br,
-.x-btn-facebook-large-mr {
-    padding-right: 1px;
 }

@@ -179,6 +179,37 @@ $treelist-nav-ui: (
     border: 1px solid #ccc;
 }
 
+.profile-name {
+    color: whitesmoke;
+    background-color: $color-soft-purple;
+}
+
+.profile-name-blue {
+    color: whitesmoke;
+    background-color: $color-soft-blue;
+}
+
+.profile-name-green {
+    color: whitesmoke;
+    background-color: $color-soft-green;
+}
+
+.profile-name-orange {
+    color: whitesmoke;
+    background-color: $color-soft-orange;
+}
+
+.profile-name-red {
+    color: whitesmoke;
+    background-color: $color-soft-red;
+}
+
+.header-right-profile-name {
+    border-radius: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
 //UI Styles for buttons
 @include extjs-button-small-ui(
     $ui: 'soft-blue',
