@@ -11,7 +11,9 @@ Ext.define('Admin.view.user.Users', {
     viewModel: {
         type: 'users'
     },
-
+    plugins: {
+        gridfilters: true
+    },
     cls: 'shadow user-grid',
     activeTab: 0,
     margin: 20,
@@ -39,25 +41,29 @@ Ext.define('Admin.view.user.Users', {
         cls: 'content-column',
         dataIndex: 'name',
         text: 'Name',
-        flex: 1
+        flex: 1,
+        filter: {type: 'string'}
     }, {
         xtype: 'gridcolumn',
         cls: 'content-column',
         dataIndex: 'surname',
         text: 'Surname',
-        flex: 1
+        flex: 1,
+        filter: {type: 'string'}
     }, {
         xtype: 'gridcolumn',
         cls: 'content-column',
         dataIndex: 'username',
         text: 'Username',
-        flex: 1
+        flex: 1,
+        filter: {type: 'string'}
     }, {
         xtype: 'gridcolumn',
         cls: 'content-column',
         dataIndex: 'email',
         text: 'Email',
-        flex: 1
+        flex: 1,
+        filter: {type: 'string'}
     }],
     dockedItems: [{
         xtype: 'pagingtoolbar',

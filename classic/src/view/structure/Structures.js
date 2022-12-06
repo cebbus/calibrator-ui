@@ -11,7 +11,9 @@ Ext.define('Admin.view.structure.Structures', {
     viewModel: {
         type: 'structures'
     },
-
+    plugins: {
+        gridfilters: true
+    },
     cls: 'shadow user-grid',
     activeTab: 0,
     margin: 20,

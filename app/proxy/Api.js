@@ -4,5 +4,11 @@ Ext.define('Admin.proxy.API', {
 
     writer: {
         writeAllFields: true
+    },
+
+    reader: {
+        type: 'json',
+        rootProperty: 'content',
+        totalProperty: 'totalElements'
     }
 });
