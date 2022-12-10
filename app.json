@@ -52,7 +52,8 @@
     "requires": [
         "charts",
         "font-awesome",
-        "ux"
+        "ux",
+        "d3"
     ],
 
     /**

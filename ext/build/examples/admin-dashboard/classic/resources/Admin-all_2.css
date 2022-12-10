@@ -12472,6 +12472,269 @@ tr.x-grid-subtable-row {
     margin: 0 20px 20px 0;
     float: left;
 }
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/Component.scss:9 */
+.x-d3 {
+    /**
+ * @class Ext.d3.Component
+ */
+    overflow: hidden;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/svg/Svg.scss:2 */
+.x-d3 svg {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+    display: block;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/svg/Svg.scss:9 */
+.x-d3-invisible {
+    visibility: hidden;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/svg/Svg.scss:13 */
+.x-d3-hidden {
+    display: none;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/axis/Axis.scss:7 */
+.x-d3-axis .tick text {
+    /**
+ * @class Ext.d3.axis.Axis
+ */
+    fill: #000;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/axis/Axis.scss:15 */
+.x-d3-axis path,
+.x-d3-axis line {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/axis/Axis.scss:22 */
+.x-d3-axis .x-d3-axis-title {
+    fill: #000;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/axis/Axis.scss:33 */
+.x-rtl .x-d3-axis[data-orient="left"] .tick text {
+    text-anchor: start !important;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/axis/Axis.scss:39 */
+.x-rtl .x-d3-axis[data-orient="right"] .tick text {
+    text-anchor: end !important;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/legend/Legend.scss:5 */
+.x-d3-legend-item text {
+    /**
+ * @class Ext.d3.legend.Legend
+ */
+    fill: #000;
+    font-size: 13px;
+    font-weight: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/HeatMap.scss:5 */
+.x-d3-heatmap {
+    /**
+ * @class Ext.d3.HeatMap
+ */
+    font: 400 13px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/HeatMap.scss:11 */
+.x-d3-heatmap .x-d3-tile:hover rect {
+    fill: #5fa2dd !important;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/HeatMap.scss:15 */
+.x-d3-heatmap .x-d3-tile rect {
+    shape-rendering: crispEdges;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/HeatMap.scss:18 */
+.x-d3-heatmap .x-d3-tile text {
+    fill: #000;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    stroke: none;
+    text-anchor: middle;
+    dominant-baseline: central;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Hierarchy.scss:5 */
+.x-d3-hierarchy {
+    /**
+ * @class Ext.d3.hierarchy.Hierarchy
+ */
+    -webkit-tap-highlight-color: transparent;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Hierarchy.scss:8 */
+.x-d3-hierarchy .x-d3-link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Hierarchy.scss:14 */
+.x-d3-hierarchy .x-d3-node {
+    cursor: default;
+    fill: #ddd;
+    stroke: #314b8b;
+    stroke-width: 1px;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Hierarchy.scss:21 */
+.x-d3-hierarchy .x-d3-node .x-d3-label {
+    fill: black;
+    stroke: none;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Hierarchy.scss:30 */
+.x-d3-hierarchy .x-d3-node.x-d3-parent {
+    cursor: pointer;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Hierarchy.scss:33 */
+.x-d3-hierarchy .x-d3-node.x-d3-parent .x-d3-label {
+    fill: #000;
+    stroke: none;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Hierarchy.scss:43 */
+.x-d3-hierarchy .x-d3-node.x-d3-selected {
+    fill: gold;
+    stroke: red;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/Pack.scss:9 */
+.x-d3-pack .x-d3-node .x-d3-label {
+    /**
+ * @class Ext.d3.hierarchy.Pack
+ */
+    text-anchor: middle;
+    alignment-baseline: middle;
+    dominant-baseline: middle;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/TreeMap.scss:9 */
+.x-d3-treemap .x-d3-node .x-d3-label {
+    /**
+ * @class Ext.d3.hierarchy.TreeMap
+ */
+    text-anchor: middle;
+    dominant-baseline: central;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/TreeMap.scss:16 */
+.x-d3-treemap .x-d3-node.x-d3-parent .x-d3-label {
+    text-anchor: start;
+    dominant-baseline: text-before-edge;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/TreeMap.scss:30 */
+.x-rtl .x-d3-treemap .x-d3-parent .x-d3-label {
+    text-anchor: end;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/partition/Sunburst.scss:7 */
+.x-d3-sunburst .x-d3-node {
+    /**
+ * @class Ext.d3.hierarchy.partition.Sunburst
+ */
+    stroke: white;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/partition/Sunburst.scss:11 */
+.x-d3-sunburst .x-d3-node.x-d3-root .x-d3-label {
+    text-anchor: middle;
+    alignment-baseline: middle;
+    dominant-baseline: middle;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/partition/Sunburst.scss:18 */
+.x-d3-sunburst .x-d3-node.x-d3-selected {
+    stroke-width: 2;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/partition/Sunburst.scss:28 */
+.x-rtl .x-d3-sunburst .x-d3-label {
+    text-anchor: end;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/tree/Tree.scss:7 */
+.x-d3-tree .x-d3-node {
+    /**
+ * @class Ext.d3.hierarchy.Tree
+ */
+    stroke-width: 2px;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/tree/Tree.scss:13 */
+.x-d3-tree .x-d3-label {
+    dominant-baseline: middle;
+    text-anchor: start;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/tree/Tree.scss:20 */
+.x-d3-tree .x-d3-parent .x-d3-label {
+    text-anchor: end;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/tree/Tree.scss:29 */
+.x-rtl .x-d3-tree .x-d3-label {
+    text-anchor: end;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/hierarchy/tree/Tree.scss:33 */
+.x-rtl .x-d3-tree .x-d3-parent .x-d3-label {
+    text-anchor: start;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:1 */
+.x-d3-scroll {
+    display: none;
+    position: absolute;
+    background: none;
+    z-index: 5;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:8 */
+.x-d3-hscroll {
+    bottom: 0;
+    width: 100%;
+    height: 12px;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:14 */
+.x-d3-vscroll {
+    right: 0;
+    width: 12px;
+    height: 100%;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:20 */
+.x-d3-scrollbar {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.25);
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:25 */
+.x-d3-hscrollbar {
+    bottom: 4px;
+    width: 100%;
+    height: 4px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:32 */
+.x-d3-vscrollbar {
+    right: 4px;
+    width: 4px;
+    height: 100%;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:40 */
+.x-rtl .x-d3-vscroll {
+    left: 0;
+    right: auto;
+}
+/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/packages/d3/sass/src/d3/interaction/PanZoom.scss:44 */
+.x-rtl .x-d3-vscrollbar {
+    left: 4px;
+    right: auto;
+}
 /* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/app/view/dashboard/Weather.scss:1 */
 .weather-panel {
     background: #fff;
@@ -15378,218 +15641,4 @@ tr.x-grid-subtable-row {
 .x-btn.x-btn-disabled .x-btn-facebook-small-tc,
 .x-btn.x-btn-disabled .x-btn-facebook-small-bc {
     background-image: url(images/btn/btn-facebook-small-disabled-corners.gif);
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3103 */
-.x-btn.x-btn-disabled .x-btn-facebook-small-ml,
-.x-btn.x-btn-disabled .x-btn-facebook-small-mr {
-    background-image: url(images/btn/btn-facebook-small-disabled-sides.gif);
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3107 */
-.x-btn.x-btn-disabled .x-btn-facebook-small-mc {
-    background-color: #167abc;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3117 */
-.x-nbr .x-btn-facebook-small {
-    background-image: none;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3123 */
-.x-btn-disabled.x-btn-facebook-small {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    opacity: 0.5;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3142 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small.x-segmented-button-first {
-    border-right-width: 1px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3144 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small.x-segmented-button-first .x-btn-facebook-small-mc {
-    padding-right: 7px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3148 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small.x-segmented-button-middle {
-    border-right-width: 1px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3150 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small.x-segmented-button-middle .x-btn-facebook-small-mc {
-    padding-right: 7px !important;
-    padding-left: 7px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3156 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small.x-segmented-button-last .x-btn-facebook-small-mc {
-    padding-left: 7px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3163 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small.x-segmented-button-first {
-    border-bottom-width: 1px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3165 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small.x-segmented-button-first .x-btn-facebook-small-mc {
-    padding-bottom: 7px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3169 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small.x-segmented-button-middle {
-    border-bottom-width: 1px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3171 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small.x-segmented-button-middle .x-btn-facebook-small-mc {
-    padding-top: 7px !important;
-    padding-bottom: 7px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3177 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small.x-segmented-button-last .x-btn-facebook-small-mc {
-    padding-top: 7px !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3183 */
-.x-nbr .x-segmented-button-item.x-btn-facebook-small:after {
-    content: ' ';
-    border-style: solid;
-    border-width: 0;
-    position: absolute;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3201 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small:after {
-    top: 1px;
-    right: 0;
-    bottom: 1px;
-    left: 0;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3207 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small.x-segmented-button-first:after {
-    left: 1px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3210 */
-.x-nbr .x-segmented-button-item-horizontal.x-btn-facebook-small.x-segmented-button-last:after {
-    right: 1px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3216 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small:after {
-    top: 0;
-    right: 1px;
-    bottom: 0;
-    left: 1px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3222 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small.x-segmented-button-first:after {
-    top: 1px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3225 */
-.x-nbr .x-segmented-button-item-vertical.x-btn-facebook-small.x-segmented-button-last:after {
-    bottom: 1px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3233 */
-.x-keyboard-mode .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-facebook-small:after {
-    border-width: 1px;
-    border-color: #cbe5f1;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3249 */
-.x-keyboard-mode .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-over.x-btn-facebook-small:after {
-    border-width: 1px;
-    border-color: #cae2ed;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3267 */
-.x-keyboard-mode .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-menu-active.x-btn-facebook-small:after,
-.x-keyboard-mode .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-pressed.x-btn-facebook-small:after {
-    border-width: 1px;
-    border-color: #c8dce5;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
-.x-cmd-slicer.x-btn-focus.x-btn-facebook-small:before {
-    /*<if slicer>*/
-    display: none;
-    content: "x-slicer:, stretch:bottom, frame:2px 2px 2px 2px, corners:url(images/btn/btn-facebook-small-focus-corners.gif), sides:url(images/btn/btn-facebook-small-focus-sides.gif)" !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
-.x-cmd-slicer.x-btn-over.x-btn-facebook-small:before {
-    /*<if slicer>*/
-    display: none;
-    content: "x-slicer:, stretch:bottom, frame:2px 2px 2px 2px, corners:url(images/btn/btn-facebook-small-over-corners.gif), sides:url(images/btn/btn-facebook-small-over-sides.gif)" !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-facebook-small:before {
-    /*<if slicer>*/
-    display: none;
-    content: "x-slicer:, stretch:bottom, frame:2px 2px 2px 2px, corners:url(images/btn/btn-facebook-small-focus-over-corners.gif), sides:url(images/btn/btn-facebook-small-focus-over-sides.gif)" !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
-.x-cmd-slicer.x-btn-pressed.x-btn-facebook-small:before {
-    /*<if slicer>*/
-    display: none;
-    content: "x-slicer:, stretch:bottom, frame:2px 2px 2px 2px, corners:url(images/btn/btn-facebook-small-pressed-corners.gif), sides:url(images/btn/btn-facebook-small-pressed-sides.gif)" !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-facebook-small:before {
-    /*<if slicer>*/
-    display: none;
-    content: "x-slicer:, stretch:bottom, frame:2px 2px 2px 2px, corners:url(images/btn/btn-facebook-small-focus-pressed-corners.gif), sides:url(images/btn/btn-facebook-small-focus-pressed-sides.gif)" !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
-.x-cmd-slicer.x-btn-disabled.x-btn-facebook-small:before {
-    /*<if slicer>*/
-    display: none;
-    content: "x-slicer:, stretch:bottom, frame:2px 2px 2px 2px, corners:url(images/btn/btn-facebook-small-disabled-corners.gif), sides:url(images/btn/btn-facebook-small-disabled-sides.gif)" !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3294 */
-.x-button-facebook-small-cell > .x-grid-cell-inner {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-neutral/sass/var/button/Button.scss:3299 */
-.x-button-facebook-small-cell > .x-grid-cell-inner >.x-btn-facebook-small {
-    vertical-align: top;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
-.x-btn-facebook-large {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-    padding: 9px 9px 9px 9px;
-    border-width: 1px;
-    border-style: solid;
-    background-color: #167abc;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
-.x-btn-facebook-large-mc {
-    background-color: #167abc;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
-.x-nbr .x-btn-facebook-large {
-    padding: 0 !important;
-    border-width: 0 !important;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
-.x-btn-facebook-large-frameInfo {
-    font-family: th-1-1-1-1-1-1-1-1-9-9-9-9;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
-.x-btn-facebook-large-tl {
-    background-position: 0 -2px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
-.x-btn-facebook-large-tr {
-    background-position: right -3px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
-.x-btn-facebook-large-bl {
-    background-position: 0 -4px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
-.x-btn-facebook-large-br {
-    background-position: right -5px;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
-.x-btn-facebook-large-ml {
-    background-position: 0 top;
-}
-/* C:/Users/cebbus/Development/projects/model-calibrator/calibrator-ui/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
-.x-btn-facebook-large-mr {
-    background-position: right top;
 }

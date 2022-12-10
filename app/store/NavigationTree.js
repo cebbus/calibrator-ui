@@ -27,6 +27,11 @@ Ext.define('Admin.store.NavigationTree', {
             viewType: 'data',
             leaf: true
         }, {
+            text: 'Model',
+            iconCls: 'x-fa fa-calculator',
+            viewType: 'forest',
+            leaf: true
+        }, {
             text: 'User',
             iconCls: 'x-fa fa-user',
             viewType: 'users',

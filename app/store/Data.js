@@ -2,5 +2,7 @@ Ext.define('Admin.store.Data', {
     extend: 'Ext.data.Store',
     alias: 'store.data',
     model: 'Admin.model.Data',
-    autoLoad: false
+    autoLoad: false,
+    remoteSort: true,
+    remoteFilter: true
 });

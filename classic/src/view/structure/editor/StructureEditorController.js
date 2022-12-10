@@ -7,6 +7,14 @@ Ext.define('Admin.view.structure.editor.StructureEditorController', {
         return value ? store.findRecord('name', value, 0, false, false, true).get('label') : value;
     },
 
+    renderClassifier: function (value) {
+        return value ? '<i class="x-fa fa-check"/>' : '<i class="x-fa fa-times"/>';
+    },
+
+    renderDifferentiator: function (value) {
+        return value ? '<i class="x-fa fa-check"/>' : '<i class="x-fa fa-times"/>';
+    },
+
     onEditorShow: function () {
         const win = this.getView();
         const form = win.down('form');

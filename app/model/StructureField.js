@@ -15,5 +15,11 @@ Ext.define('Admin.model.StructureField', {
     }, {
         type: 'string',
         name: 'type'
+    }, {
+        type: 'bool',
+        name: 'classifier'
+    }, {
+        type: 'bool',
+        name: 'differentiator'
     }]
 });

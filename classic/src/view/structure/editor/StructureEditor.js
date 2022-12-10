@@ -75,6 +75,30 @@ Ext.define('Admin.view.structure.editor.StructureEditor', {
                         displayField: 'label',
                         valueField: 'name'
                     }
+                }, {
+                    dataIndex: 'classifier',
+                    text: 'Classifier',
+                    renderer: 'renderClassifier',
+                    flex: undefined,
+                    width: 75,
+                    align: 'center',
+                    editor: {
+                        xtype: 'checkbox',
+                        hideLabel: true,
+                        allowBlank: false
+                    }
+                }, {
+                    dataIndex: 'differentiator',
+                    text: 'Separator',
+                    renderer: 'renderDifferentiator',
+                    flex: undefined,
+                    width: 75,
+                    align: 'center',
+                    editor: {
+                        xtype: 'checkbox',
+                        hideLabel: true,
+                        allowBlank: false
+                    }
                 }]
             },
             tbar: {
