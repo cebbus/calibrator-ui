@@ -99,6 +99,18 @@ Ext.define('Admin.view.structure.editor.StructureEditor', {
                         hideLabel: true,
                         allowBlank: false
                     }
+                }, {
+                    dataIndex: 'excluded',
+                    text: 'Exclude',
+                    renderer: 'renderExcluded',
+                    flex: undefined,
+                    width: 75,
+                    align: 'center',
+                    editor: {
+                        xtype: 'checkbox',
+                        hideLabel: true,
+                        allowBlank: false
+                    }
                 }]
             },
             tbar: {

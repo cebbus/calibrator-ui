@@ -21,5 +21,8 @@ Ext.define('Admin.model.StructureField', {
     }, {
         type: 'bool',
         name: 'differentiator'
+    }, {
+        type: 'bool',
+        name: 'excluded'
     }]
 });

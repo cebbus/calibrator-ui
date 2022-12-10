@@ -15,6 +15,10 @@ Ext.define('Admin.view.structure.editor.StructureEditorController', {
         return value ? '<i class="x-fa fa-check"/>' : '<i class="x-fa fa-times"/>';
     },
 
+    renderExcluded: function (value) {
+        return value ? '<i class="x-fa fa-check"/>' : '<i class="x-fa fa-times"/>';
+    },
+
     onEditorShow: function () {
         const win = this.getView();
         const form = win.down('form');
