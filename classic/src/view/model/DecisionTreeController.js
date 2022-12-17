@@ -15,7 +15,38 @@ Ext.define('Admin.view.model.DecisionTreeController', {
     },
 
     onTestClick: function () {
+        const me = this;
+        const view = me.getView();
+        const method = view.down('#methodCombo').getSelection();
+        const structure = view.down('#structureCombo').getSelection();
 
+        if (Ext.isEmpty(method) || Ext.isEmpty(structure)) {
+            return;
+        }
+
+        view.mask('Please wait...');
+
+        Ext.Ajax.request({
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            url: AdminProperties.ENDPOINT + "/forest/test",
+            params: Ext.JSON.encode({
+                methodType: method.get('name'),
+                structureId: structure.get('id')
+            }),
+            success(response) {
+                //Ext.isEmpty(response.responseText)
+                Ext.Msg.show({
+                    title: 'Ok',
+                    message: 'Class assignment completed!',
+                    buttons: Ext.Msg.OK,
+                    icon: Ext.Msg.INFO
+                });
+            },
+            callback() {
+                view.unmask();
+            }
+        });
     },
 
     loadTreeStore: function (training) {
