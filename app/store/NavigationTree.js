@@ -32,6 +32,11 @@ Ext.define('Admin.store.NavigationTree', {
             viewType: 'forest',
             leaf: true
         }, {
+            text: 'Compare',
+            iconCls: 'x-fa fa-check',
+            viewType: 'compare',
+            leaf: true
+        }, {
             text: 'User',
             iconCls: 'x-fa fa-user',
             viewType: 'users',
