@@ -13,6 +13,12 @@ Ext.define('Admin.model.MethodCompare', {
         type: 'date',
         name: 'trainingEnd'
     }, {
+        type: 'number',
+        name: 'trainingTime',
+        calculate: function (data) {
+            return data['trainingEnd'] - data['trainingStart'];
+        }
+    }, {
         type: 'int',
         name: 'trainingSize'
     }, {
@@ -21,6 +27,12 @@ Ext.define('Admin.model.MethodCompare', {
     }, {
         type: 'date',
         name: 'testEnd'
+    }, {
+        type: 'number',
+        name: 'testTime',
+        calculate: function (data) {
+            return data['testEnd'] - data['testStart'];
+        }
     }, {
         type: 'int',
         name: 'testSize'

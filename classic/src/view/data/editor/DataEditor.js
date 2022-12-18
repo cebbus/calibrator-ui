@@ -6,6 +6,7 @@ Ext.define('Admin.view.data.editor.DataEditor', {
 
     layout: 'fit',
     width: '30%',
+    maxHeight: 600,
     controller: 'dataeditor',
     config: {
         dataRecord: undefined,
@@ -41,6 +42,7 @@ Ext.define('Admin.view.data.editor.DataEditor', {
         xtype: 'form',
         defaultType: 'textfield',
         bodyPadding: 10,
+        scrollable: true,
         defaults: {
             labelWidth: 90,
             allowBlank: false,

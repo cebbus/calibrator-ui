@@ -2,6 +2,22 @@ Ext.define('Admin.view.compare.MethodCompareController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.compare',
 
+    methodRenderer: function (value) {
+        if (Ext.isEmpty(value)) {
+            return value;
+        }
+
+        return Admin.enums.MethodType[value].label;
+    },
+
+    chartMethodRenderer: function (axis, label) {
+        return this.methodRenderer(label);
+    },
+
+    chartTimeRenderer: function (v) {
+        return Ext.util.Format.number(v, '0,000') + ' ms';
+    },
+
     onDataViewActivate: function () {
         const store = this.getStore('structures');
         store.load();

@@ -54,18 +54,23 @@ Ext.define('Admin.view.model.DecisionTree', {
     }],
     items: [{
         xtype: 'panel',
-        layout: 'hbox',
+        layout: 'border',
         width: '100%',
         height: '100%',
         items: [{
             xtype: 'treepanel',
+            region:'west',
             rootVisible: false,
             minWidth: 100,
             width: 500,
             height: '100%',
             border: true,
-            bind: {store: '{decisionTree}'},
-            margin: '0 8 0 0',
+            collapsible: true,
+            split: true,
+            bind: {
+                store: '{decisionTree}',
+                title: '{theStructure.className + " - " + theMethod.label}'
+            },
             columns: [{
                 xtype: 'treecolumn',
                 text: 'Name',
@@ -78,6 +83,7 @@ Ext.define('Admin.view.model.DecisionTree', {
             }]
         }, {
             xtype: 'panel',
+            region: 'center',
             flex: 1,
             height: '100%',
             border: true,

@@ -81,6 +81,7 @@ Ext.define('Admin.view.data.DataController', {
                     flex: 1,
                     text: field.fieldName,
                     dataIndex: field.fieldName,
+                    minWidth: 150,
                 }, dataType.gridColumnConfig));
             });
         }

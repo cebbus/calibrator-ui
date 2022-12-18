@@ -22,7 +22,8 @@ Ext.define('Admin.view.data.Data', {
     margin: 20,
     reference: 'dataGrid',
     routeId: 'data',
-    scrollable: false,
+    scrollable: true,
+    layout: 'fit',
     bind: '{data}',
     tbar: [{
         xtype: 'combo',

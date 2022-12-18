@@ -6,11 +6,11 @@ Ext.define('Admin.view.main.MainContainerWrap', {
         'Ext.layout.container.HBox'
     ],
 
-    scrollable: 'y',
+    scrollable: false,
 
     layout: {
         type: 'hbox',
-        align: 'stretchmax',
+        //align: 'stretchmax',
 
         // Tell the layout to animate the x/width of the child items.
         animate: true,
@@ -18,6 +18,10 @@ Ext.define('Admin.view.main.MainContainerWrap', {
             x: true,
             width: true
         }
+    },
+
+    defaults: {
+        height: '100%'
     },
 
     beforeLayout : function() {
