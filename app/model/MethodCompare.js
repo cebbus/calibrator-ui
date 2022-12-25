@@ -43,6 +43,9 @@ Ext.define('Admin.model.MethodCompare', {
         type: 'string',
         name: 'method'
     }, {
+        type: 'number',
+        name: 'nodeWalk'
+    }, {
         name: 'structure'
     }],
 

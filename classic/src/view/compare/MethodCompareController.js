@@ -18,6 +18,10 @@ Ext.define('Admin.view.compare.MethodCompareController', {
         return Ext.util.Format.number(v, '0,000') + ' ms';
     },
 
+    chartNodeWalkRenderer: function (v) {
+        return Ext.util.Format.number(v, '0,000.00');
+    },
+
     onDataViewActivate: function () {
         const store = this.getStore('structures');
         store.load();

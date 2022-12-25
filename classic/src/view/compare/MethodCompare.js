@@ -121,6 +121,12 @@ Ext.define('Admin.view.compare.MethodCompare', {
             dataIndex: 'unclassifiedDataSize',
             text: 'Unclassified Data Size',
             flex: 1
+        }, {
+            xtype: 'numbercolumn',
+            cls: 'content-column',
+            dataIndex: 'nodeWalk',
+            text: 'Avg. Node Walk',
+            flex: 1
         }],
         dockedItems: [{
             xtype: 'pagingtoolbar',
@@ -133,15 +139,21 @@ Ext.define('Admin.view.compare.MethodCompare', {
         xtype: 'panel',
         height: 300,
         width: '100%',
-        border: true,
-        collapsible: true,
+        border: false,
         split: true,
-        layout: 'fit',
-        bind: {title: '{theStructure.className}'},
+        layout: 'hbox',
+        title: false,
         items: [{
             xtype: 'cartesian',
-            bind: '{compare}',
+            bind: {
+                store: '{compare}',
+                title: '{theStructure.className} Training & Test Time'
+            },
             flipXY: true,
+            flex: 5,
+            height: '100%',
+            border: true,
+            margin: '0 8px 0 0',
             background: 'rgba(255, 255, 255, 1)',
             colors: [
                 '#6aa5dc',
@@ -150,7 +162,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
             ],
             legend: {
                 type: 'dom',
-                docked: 'right'
+                docked: 'bottom'
             },
             axes: [{
                 type: 'numeric',
@@ -179,7 +191,98 @@ Ext.define('Admin.view.compare.MethodCompare', {
                     renderer: 'chartTimeRenderer'
                 }
             }]
+        }, {
+            xtype: 'cartesian',
+            bind: {
+                store: '{compare}',
+                title: '{theStructure.className} Average Node Walk'
+            },
+            flex: 2.5,
+            height: '100%',
+            border: true,
+            margin: '0 8px 0 0',
+            background: 'rgba(255, 255, 255, 1)',
+            colors: [
+                '#6aa5dc',
+                '#ee929d',
+                '#fdbf00'
+            ],
+            axes: [{
+                type: 'numeric',
+                position: 'left',
+                fields: ['nodeWalk'],
+                hidden: true,
+                label: {
+                    color: '#555',
+                    strokeOpacity: 0.3
+                }
+            }, {
+                type: 'category',
+                position: 'bottom',
+                fields: 'method',
+                renderer: 'chartMethodRenderer',
+                label: {
+                    color: '#555',
+                    strokeOpacity: 0.3
+                }
+            }],
+            series: [{
+                type: 'line',
+                xField: 'method',
+                yField: ['nodeWalk'],
+                // title: [ 'Training Time'],
+                label: {
+                    field: ['nodeWalk'],
+                    display: 'insideEnd',
+                    color: '#555',
+                    renderer: 'chartNodeWalkRenderer'
+                }
+            }]
+        }, {
+            xtype: 'cartesian',
+            bind: {
+                store: '{compare}',
+                title: '{theStructure.className} Unclassified Data Size'
+            },
+            flex: 2.5,
+            height: '100%',
+            border: true,
+            background: 'rgba(255, 255, 255, 1)',
+            colors: [
+                '#ee929d',
+                '#6aa5dc',
+                '#fdbf00'
+            ],
+            axes: [{
+                type: 'numeric',
+                position: 'left',
+                fields: ['unclassifiedDataSize'],
+                hidden: true,
+                label: {
+                    color: '#555',
+                    strokeOpacity: 0.3
+                }
+            }, {
+                type: 'category',
+                position: 'bottom',
+                fields: 'method',
+                renderer: 'chartMethodRenderer',
+                label: {
+                    color: '#555',
+                    strokeOpacity: 0.3
+                }
+            }],
+            series: [{
+                type: 'bar',
+                xField: 'method',
+                yField: ['unclassifiedDataSize'],
+                label: {
+                    field: ['unclassifiedDataSize'],
+                    display: 'insideEnd',
+                    color: '#555',
+                    // renderer: 'chartNodeWalkRenderer'
+                }
+            }]
         }]
     }]
-
 });
