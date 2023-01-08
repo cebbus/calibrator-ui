@@ -40,6 +40,23 @@ Ext.define('Admin.model.MethodCompare', {
         type: 'int',
         name: 'unclassifiedDataSize'
     }, {
+        type: 'int',
+        name: 'wrongClassifiedDataSize'
+    }, {
+        type: 'number',
+        name: 'accuracy',
+        calculate: function (data) {
+            const testSize = data['testSize'];
+            if (testSize === 0) {
+                return 0;
+            }
+
+            const unclassifiedDataSize = data['unclassifiedDataSize'];
+            const wrongClassifiedDataSize = data['wrongClassifiedDataSize'];
+
+            return 1 - ((unclassifiedDataSize + wrongClassifiedDataSize) / testSize);
+        }
+    }, {
         type: 'string',
         name: 'method'
     }, {

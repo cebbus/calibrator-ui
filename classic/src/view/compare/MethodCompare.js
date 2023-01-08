@@ -69,6 +69,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
             dataIndex: 'trainingStart',
             text: 'Training Start',
             format: 'd.m.Y H:i:s.u',
+            hidden: true,
             flex: 1
         }, {
             xtype: 'datecolumn',
@@ -76,6 +77,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
             dataIndex: 'trainingEnd',
             text: 'Training End',
             format: 'd.m.Y H:i:s.u',
+            hidden: true,
             flex: 1
         }, {
             xtype: 'numbercolumn',
@@ -95,6 +97,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
             dataIndex: 'testStart',
             text: 'Test Start',
             format: 'd.m.Y H:i:s.u',
+            hidden: true,
             flex: 1
         }, {
             xtype: 'datecolumn',
@@ -102,6 +105,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
             dataIndex: 'testEnd',
             text: 'Test End',
             format: 'd.m.Y H:i:s.u',
+            hidden: true,
             flex: 1
         }, {
             xtype: 'numbercolumn',
@@ -124,6 +128,21 @@ Ext.define('Admin.view.compare.MethodCompare', {
         }, {
             xtype: 'numbercolumn',
             cls: 'content-column',
+            dataIndex: 'wrongClassifiedDataSize',
+            text: 'Wrong Classified Data Size',
+            flex: 1
+        }, {
+            xtype: 'numbercolumn',
+            cls: 'content-column',
+            dataIndex: 'accuracy',
+            text: 'Accuracy',
+            flex: 1,
+            renderer: function (value) {
+                return Ext.util.Format.percent(value, '0.00');
+            }
+        }, {
+            xtype: 'numbercolumn',
+            cls: 'content-column',
             dataIndex: 'nodeWalk',
             text: 'Avg. Node Walk',
             flex: 1
@@ -137,7 +156,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
         }]
     }, {
         xtype: 'panel',
-        height: 300,
+        height: 250,
         width: '100%',
         border: false,
         split: true,
@@ -150,7 +169,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
                 title: '{theStructure.className} Training & Test Time'
             },
             flipXY: true,
-            flex: 5,
+            flex: 1,
             height: '100%',
             border: true,
             margin: '0 8px 0 0',
@@ -161,8 +180,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
                 '#ee929d'
             ],
             legend: {
-                type: 'dom',
-                docked: 'bottom'
+                docked: 'right'
             },
             axes: [{
                 type: 'numeric',
@@ -197,7 +215,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
                 store: '{compare}',
                 title: '{theStructure.className} Average Node Walk'
             },
-            flex: 2.5,
+            flex: 1,
             height: '100%',
             border: true,
             margin: '0 8px 0 0',
@@ -211,7 +229,7 @@ Ext.define('Admin.view.compare.MethodCompare', {
                 type: 'numeric',
                 position: 'left',
                 fields: ['nodeWalk'],
-                hidden: true,
+                //hidden: true,
                 label: {
                     color: '#555',
                     strokeOpacity: 0.3
@@ -238,26 +256,39 @@ Ext.define('Admin.view.compare.MethodCompare', {
                     renderer: 'chartNodeWalkRenderer'
                 }
             }]
-        }, {
+        }]
+    }, {
+        xtype: 'panel',
+        height: 250,
+        width: '100%',
+        border: false,
+        split: true,
+        layout: 'hbox',
+        title: false,
+        items: [{
             xtype: 'cartesian',
             bind: {
                 store: '{compare}',
-                title: '{theStructure.className} Unclassified Data Size'
+                title: '{theStructure.className} Unclassified & Wrong Classification'
             },
-            flex: 2.5,
+            flex: 1,
             height: '100%',
             border: true,
+            margin: '0 8px 0 0',
             background: 'rgba(255, 255, 255, 1)',
             colors: [
                 '#ee929d',
                 '#6aa5dc',
                 '#fdbf00'
             ],
+            legend: {
+                docked: 'right'
+            },
             axes: [{
                 type: 'numeric',
                 position: 'left',
-                fields: ['unclassifiedDataSize'],
-                hidden: true,
+                fields: ['unclassifiedDataSize', 'wrongClassifiedDataSize'],
+                // hidden: true,
                 label: {
                     color: '#555',
                     strokeOpacity: 0.3
@@ -273,14 +304,62 @@ Ext.define('Admin.view.compare.MethodCompare', {
                 }
             }],
             series: [{
+                type: 'area',
+                xField: 'method',
+                yField: ['unclassifiedDataSize', 'wrongClassifiedDataSize'],
+                title: [ 'Unclassified', 'Wrong Classified'],
+                label: {
+                    field: ['unclassifiedDataSize', 'wrongClassifiedDataSize'],
+                    display: 'insideEnd',
+                    color: '#555'
+                }
+            }]
+        }, {
+            xtype: 'cartesian',
+            bind: {
+                store: '{compare}',
+                title: '{theStructure.className} Accuracy'
+            },
+            flipXY: true,
+            flex: 1,
+            height: '100%',
+            border: true,
+            background: 'rgba(255, 255, 255, 1)',
+            colors: [
+                '#ee929d',
+                '#6aa5dc',
+                '#fdbf00'
+            ],
+            axes: [{
+                type: 'numeric',
+                position: 'bottom',
+                fields: ['accuracy'],
+                hidden: true,
+                label: {
+                    color: '#555',
+                    strokeOpacity: 0.3
+                }
+            }, {
+                type: 'category',
+                position: 'left',
+                fields: 'method',
+                renderer: 'chartMethodRenderer',
+                label: {
+                    color: '#555',
+                    strokeOpacity: 0.3
+                }
+            }],
+            series: [{
                 type: 'bar',
                 xField: 'method',
-                yField: ['unclassifiedDataSize'],
+                yField: ['accuracy'],
                 label: {
-                    field: ['unclassifiedDataSize'],
+                    field: ['accuracy'],
                     display: 'insideEnd',
                     color: '#555',
-                    // renderer: 'chartNodeWalkRenderer'
+                    renderer: function (value) {
+                        return Ext.util.Format.percent(value, '0.00');
+                    }
                 }
             }]
         }]

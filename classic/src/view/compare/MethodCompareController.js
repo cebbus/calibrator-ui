@@ -27,10 +27,10 @@ Ext.define('Admin.view.compare.MethodCompareController', {
         store.load();
     },
 
-    onStartClick: function () {
+    onStartClick: function (t) {
         const me = this;
         const view = me.getView();
-        const structure = view.down('combo').getSelection();
+        const structure = view.down().down('combo').getSelection();
 
         if (Ext.isEmpty(structure)) {
             return;
